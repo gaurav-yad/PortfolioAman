@@ -12,12 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 18
+        uses: actions/setup-node@v3
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
@@ -33,20 +31,19 @@ jobs:
 
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Download build files
+      - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
 
-      - name: Deploy to server
-        run: |
-          # Add your deployment script here
-          echo "Deploying to server..."
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
