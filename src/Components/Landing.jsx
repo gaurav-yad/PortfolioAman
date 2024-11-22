@@ -48,8 +48,8 @@ const Landing = () => {
           </p>
           <a
             className="bg-primary w-64 text-white py-2 text-lg rounded-sm hover:scale-105 transition-transform flex gap-2 justify-center items-center"
-            download = "resume.docx"
-            href="/resume.docx"
+            download
+            href="https://gaurav-yad.github.io/PortfolioAman//resume.docx"
           >
             <span>My Resume</span> <i class="fa-solid fa-briefcase"></i>
           </a>
