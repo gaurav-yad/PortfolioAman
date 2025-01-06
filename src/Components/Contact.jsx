@@ -9,7 +9,7 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText("yadav.aman@gmail.com").then(() => {
+    navigator.clipboard.writeText("aman0902work@gmail.com").then(() => {
       setCopied(true);
       toast.success("Email Address Copied!", {
         position: "top-right",
@@ -43,7 +43,7 @@ const Contact = () => {
         <div className="w-[40%] flex justify-center items-center relative">
           <button
             onClick={handleCopyEmail}
-            className="bg-primary py-3 px-8 rounded-sm shadow-xl text-lg relative z-10 text-white"
+            className="bg-primary py-3 px-8 rounded-sm shadow-xl text-lg relative z-10 text-white hover:scale-105 transition-all duration-300"
           >
             Copy my Email
           </button>

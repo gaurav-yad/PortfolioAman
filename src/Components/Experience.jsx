@@ -38,9 +38,9 @@ const Experience = () => {
       </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+        <ExprCard img={teamLeader} title="Team Leader" more="https://netambit.com/" />
           <ExprCard img={expr} title="Academic Counsellor" more="https://www.upgrad.com/data-science-pgd-iiitb/?ref=ZJZEAU&utm_source=Priyanshu_Goel_EPGPDS&utm_medium=Affiliates_Ambassador&utm_campaign=IND_ACQ_Web_Affiliates_Ambassador_Priyanshu_Goel_EPGPDS&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7oK4-CaPITn6yfVxzarDOmKDiSsk0wk-Jns1KVaWaF_PsapxOrr5JcaAm_2EALw_wcB" />
           <ExprCard img={manager} title="Manager and Teacher" more="https://www.justdial.com/Agra/Antim-Pag-Defence-Academy-Opposite-to-Water-TankNear-Defence-State-Madhu-Nagar/0562PX562-X562-221230212836-D9D5_BZDET" />
-          <ExprCard img={teamLeader} title="Team Leader" more="https://netambit.com/" />
           <ExprCard img={research} title="Research" more="https://ijisrt.com/scrutinize-of-physicochemical-parameters-and-heavy-metals-in-industrial-waste-water-of-agra-district-and-alleviation-measures-of-their-venomous-effect" />
         </div>
       </div>

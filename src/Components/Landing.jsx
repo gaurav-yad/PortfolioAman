@@ -29,27 +29,17 @@ const Landing = () => {
               Hello I am Aman
             </h3>
             <h1 className="text-7xl font-bold">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Academic Counsellor",
-                    "Digital Media Manager",
-                    "Team Leader",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              Team Leader
             </h1>
           </div>
           <p className="w-[70%] text-lg my-2">
-            A hardworking, mature, and responsible person with forward thinking
+            A hardworking, mature, and responsible leader with forward thinking
             and excellent interpersonal and organizational skills.
           </p>
           <a
             className="bg-primary w-64 text-white py-2 text-lg rounded-sm hover:scale-105 transition-transform flex gap-2 justify-center items-center"
             download
-            href="https://gaurav-yad.github.io/PortfolioAman//resume.docx"
+            href="https://gaurav-yad.github.io/PortfolioAman//resumeAman.pdf"
           >
             <span>My Resume</span> <i class="fa-solid fa-briefcase"></i>
           </a>
